@@ -1,0 +1,70 @@
+<div class="max-w-md mx-auto my-10 p-6 bg-white rounded-md shadow-md">
+  <h2 class="text-2xl font-semibold mb-2">Регистрация</h2>
+
+  <div class="mb-4">
+    <label for="login" class="block text-gray-700 text-sm font-bold mb-2">Логин</label>
+    <input id="login" type="text" [(ngModel)]="user.login" class="w-full px-3 py-2 border rounded-md" required>
+  </div>
+
+  <div class="mb-4">
+    <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Пароль</label>
+    <input id="password" type="password" [(ngModel)]="user.password" class="w-full px-3 py-2 border rounded-md" required>
+  </div>
+
+  <div class="mb-4">
+    <label for="confirmPassword" class="block text-gray-700 text-sm font-bold mb-2">Подтвердите пароль</label>
+    <input id="confirmPassword" type="password" [(ngModel)]="user.confirmPassword" class="w-full px-3 py-2 border rounded-md" required>
+  </div>
+
+  <div class="mb-4">
+    <label for="family" class="block text-gray-700 text-sm font-bold mb-2">Фамилия</label>
+    <input id="family" type="text" [(ngModel)]="user.family" class="w-full px-3 py-2 border rounded-md" required>
+  </div>
+
+  <div class="mb-4">
+    <label for="nameU" class="block text-gray-700 text-sm font-bold mb-2">Имя</label>
+    <input id="nameU" type="text" [(ngModel)]="user.nameU" class="w-full px-3 py-2 border rounded-md" required>
+  </div>
+
+  <div class="mb-4">
+    <label for="patronymic" class="block text-gray-700 text-sm font-bold mb-2">Отчество</label>
+    <input id="patronymic" type="text" [(ngModel)]="user.patronymic" class="w-full px-3 py-2 border rounded-md">
+  </div>
+
+  <div class="mb-4">
+    <label for="numberTeleph" class="block text-gray-700 text-sm font-bold mb-2">Номер телефона</label>
+    <input id="numberTeleph" type="text" [(ngModel)]="user.numberTeleph" class="w-full px-3 py-2 border rounded-md">
+  </div>
+
+  <div class="mb-4">
+    <label for="dateBrit" class="block text-gray-700 text-sm font-bold mb-2">Дата рождения</label>
+    <input id="dateBrit" type="date" [(ngModel)]="user.dateBrit" class="w-full px-3 py-2 border rounded-md" required>
+  </div>
+
+  <div class="mb-4">
+    <label for="contactInformation" class="block text-gray-700 text-sm font-bold mb-2">Контактная информация</label>
+    <input id="contactInformation" type="text" [(ngModel)]="user.contactInformation" class="w-full px-3 py-2 border rounded-md" required>
+  </div>
+
+  <div class="mb-4">
+    <button
+      type="button"
+      (click)="register()"
+      class="w-full bg-blue-500 text-white py-2 px-4 rounded-md"
+      [disabled]="!isRegistrationValid()">
+      Зарегистрироваться
+    </button>
+  </div>
+
+  <div *ngIf="registrationError" class="text-red-500">
+    {{ registrationError }}
+  </div>
+
+  <div class="text-gray-700">
+    Уже есть аккаунт? <a routerLink="/login"  class="  text-blue-500  ">Войдите</a>.
+  </div>
+
+
+</div>
+
+

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Спортивная аренда - Помощь и контакты</title>
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal min-h-screen flex flex-col">
+
+<nav
+  class="flex-no-wrap relative flex w-full items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4">
+  <div class="flex w-full flex-wrap items-center justify-between px-3">
+    <!-- Hamburger button for mobile view -->
+    <button
+      class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+      type="button"
+      data-te-collapse-init
+      data-te-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent1"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <!-- Hamburger icon -->
+      <span class="[&>svg]:w-7">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-7 w-7">
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+      </span>
+    </button>
+
+    <!-- Collapsible navigation container -->
+    <div
+      class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+      id="navbarSupportedContent12">
+      <!-- Logo -->
+      <a
+        class="mb-4 ml-2 mr-5 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0"
+        href="#">
+        <img
+          src="https://tecdn.b-cdn.net/img/logo/te-transparent-noshadows.webp"
+          style="height: 15px"
+          alt="TE Logo"
+          loading="lazy" />
+      </a>
+      <!-- Left navigation links -->
+      <ul
+        class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
+        data-te-navbar-nav-ref>
+        <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+          <!-- Dashboard link -->
+          <a
+            class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+            href="/home"
+            data-te-nav-link-ref
+          >Rockstable</a
+          >
+        </li>
+        <!-- Team link -->
+        <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="/catalog"
+            data-te-nav-link-ref
+          >Каталог</a
+          >
+        </li>
+        <!-- Projects link -->
+
+        <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="/promotions"
+            data-te-nav-link-ref
+          >Где мы находимся</a
+          >
+        </li>
+
+        <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="/contact"
+            data-te-nav-link-ref
+          >Помощь и Контакты</a
+          >
+        </li>
+
+        <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="/about"
+            data-te-nav-link-ref
+          >О нас</a
+          >
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- Right elements -->
+    <div class="relative flex items-center">
+      <!-- Cart Icon -->
+      <span class="ml-1"> ({{ currentUser ? equipmentService.shoppingCartMap.get(currentUser.login)?.length || 0 : 0 }})</span>
+      <a
+        class="mr-4 text-secondary-500 transition duration-200 hover:text-secondary-400 hover:ease-in-out focus:text-secondary-400 disabled:text-black/30 motion-reduce:transition-none"
+        href="/cart">
+        <span class="[&>svg]:w-5">
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-5 w-5">
+            <path
+              d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+          </svg>
+
+        </span>
+      </a>
+
+      <!-- Second dropdown container -->
+      <div
+
+        class="relative"
+        data-te-dropdown-ref
+        data-te-dropdown-alignment="end">
+        <!-- Second dropdown trigger -->
+        <a
+
+          class="hidden-arrow flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
+          href="#"
+          id="dropdownMenuButton2"
+          role="button"
+          data-te-dropdown-toggle-ref
+          aria-expanded="false">
+          <!-- User avatar -->
+          <img
+            src="https://tecdn.b-cdn.net/img/new/avatars/2.jpg"
+            class="rounded-full"
+            style="height: 25px; width: 25px"
+            alt=""
+            loading="lazy" />
+        </a>
+
+        <!-- Second dropdown menu -->
+        <ul
+          class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+          aria-labelledby="dropdownMenuButton2"
+          data-te-dropdown-menu-ref>
+          <!-- Second dropdown menu items -->
+          <li>
+            <p class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400">
+              Здравствуйте, {{ currentUser.login }}
+            </p>
+          </li>
+
+          <li>
+            <a
+              class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+              href="/lk"
+              data-te-dropdown-item-ref
+            >Личный кабинет</a
+            >
+          </li>
+          <li>
+            <a
+              class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+              (click)="logout()"
+              data-te-dropdown-item-ref
+            >Выйти</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Контент страницы "Помощь и контакты" -->
+<div class="container mx-auto my-10 p-6 bg-white rounded-md shadow-md flex-grow">
+  <h1 class="text-3xl font-semibold mb-6 text-center">Помощь и контакты</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Секция Помощь -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-4">Нужна помощь?</h2>
+      <p>Если у вас возникли вопросы или проблемы, обращайтесь к нам. Мы готовы помочь вам в любое время.</p>
+    </div>
+
+    <!-- Секция Контакты -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">Наши контакты</h2>
+      <p>Email: info@sportrental.com</p>
+      <p>Телефон: +7 123 456 789</p>
+      <p>Адрес: ул. Спортивная, д. 123</p>
+    </div>
+  </div>
+</div>
+
+<!-- Нижняя строка -->
+<footer class="w-full border-t-2 border-gray-300 bg-gray-200 py-6 mt-auto">
+  <div class="container mx-auto text-gray-600 text-center">
+    <p>&copy; 2023 Rockstable. Все права защищены. Дополнительная информация или контакты: main@mail.ru</p>
+  </div>
+</footer>
+
+</body>
+
+</html>
